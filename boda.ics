@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Digital Pro//Boda Sergio y Patricia//ES
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:sergio-patricia-20261212@digitalpro
+DTSTAMP:20261124T000000Z
+DTSTART:20261212T183000Z
+DTEND:20261213T053000Z
+SUMMARY:Boda de Sergio y Patricia
+LOCATION:Parroquia San Ildefonso\, Quillacollo\, Cochabamba
+DESCRIPTION:Ceremonia religiosa 14:30 en la Parroquia San Ildefonso. Recepción en el Salón de Eventos Fortaleza. Traje formal. Confirmaciones: +591 65777426.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Mañana es la boda de Sergio y Patricia
+END:VALARM
+END:VEVENT
+END:VCALENDAR

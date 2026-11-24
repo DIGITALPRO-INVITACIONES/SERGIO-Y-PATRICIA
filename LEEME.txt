@@ -1,0 +1,28 @@
+SERGIO & PATRICIA — NUESTRA BODA
+
+Diseño terracota, dorado, crema y verde, con arreglos florales (rosas terracota, crema y durazno, eucalipto, pampa y hojas) en esquinas, guirnaldas y marcos de foto, fondo con textura de papel, marcos en arco y sobre terracota con sello dorado S&P que se abre al tocarlo. Música al abrir ("Tan enamorados", Ricardo Montaner), hojas y pétalos que caen, nombres con brillo dorado, cuenta regresiva y calendario con corazón en el día 12.
+Botones flotantes: música (pausar / continuar) y animaciones (pausar / continuar).
+
+FECHA: Sábado 12 de diciembre de 2026, 14:30, hora de Bolivia.
+CEREMONIA: Parroquia San Ildefonso, Quillacollo. https://maps.app.goo.gl/CeEXFCbojJGW33tT9
+RECEPCIÓN: Salón de Eventos Fortaleza, Quillacollo. https://maps.app.goo.gl/aDAmqTkf52FpMYfYA
+CRONOGRAMA: Ceremonia religiosa 14:30 · Acto protocolar 16:30 · Cena 18:30 · Torta 22:00 · Bouquet y liga 00:00 · Despedida 01:30.
+VESTIMENTA: Traje formal. Damas: vestido largo de gala. Varones: traje formal y corbata. Blanco y tonos claros reservados para los novios.
+Celebración sin niños. Regalo: lluvia de sobres (sin QR).
+CONFIRMACIÓN: WhatsApp +591 65777426 (mensaje prellenado con nombre y número de asistentes).
+
+FOTOS: una por sección, completas y sin recorte: foto-1 (sentados) en la portada, foto-2 (con el perrito) a mitad de la invitación, foto-3 (bailando) en el cierre.
+FLORES: flores-esquina.webp, flores-guirnalda.webp y flores-ramo.webp (PNG transparentes en formato webp).
+Nombres de padres y padrinos tal como los envió el cliente.
+
+PUBLICAR EN GITHUB PAGES
+1. Crea el repositorio con el nombre exacto SERGIO-Y-PATRICIA en la cuenta digitalpro-invitaciones.
+   (La vista previa al compartir por WhatsApp usa https://digitalpro-invitaciones.github.io/SERGIO-Y-PATRICIA/portada.jpg; si cambias el nombre, cambia esa línea en index.html.)
+2. Sube TODOS los archivos y la carpeta "fuentes" a la raíz. Conserva los nombres. Incluye .nojekyll.
+3. Activa GitHub Pages (rama principal, carpeta raíz).
+4. Abre la invitación desde un celular antes de enviarla a los invitados.
+
+EDICIÓN
+index.html: textos, nombres, lugares, padrinos.
+invitacion.js: fotos del álbum y sus frases, fecha de la cuenta regresiva, mensaje de WhatsApp.
+estilo.css: colores (al inicio, en :root) y diseño.

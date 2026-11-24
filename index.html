@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#7f3520">
+<title>Sergio & Patricia · Nuestra boda</title>
+<meta name="description" content="Con mucho amor te invitamos a nuestra boda. Sábado 12 de diciembre de 2026 · Quillacollo, Cochabamba.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sergio & Patricia · Nuestra boda">
+<meta property="og:description" content="Sábado 12 de diciembre de 2026 · Toca para abrir tu invitación.">
+<meta property="og:image" content="https://digitalpro-invitaciones.github.io/SERGIO-Y-PATRICIA/portada.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23b4532f'/%3E%3Ctext x='16' y='21' font-size='13' text-anchor='middle' font-family='Georgia' fill='%23f5ecdf'%3ES%26P%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fuentes/caligrafia.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="estilo.css">
+<script src="invitacion.js" defer></script>
+</head>
+<body>
+
+
+<audio id="music" src="cancion.mp3" loop preload="none"></audio>
+<div id="hojas" aria-hidden="true"></div>
+
+<!-- PORTADA / SOBRE -->
+<section class="welcome" id="welcome">
+  <img class="corner tl" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true">
+  <img class="corner br" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true">
+  <div class="welcome-inner">
+    <p class="kicker">CON TODO NUESTRO AMOR</p>
+    <p class="welcome-title">Dos caminos<br>que hoy se vuelven <em>uno</em></p>
+    <div class="envelope" id="envelope">
+      <div class="env-back"></div>
+      <div class="letter"><span class="script">Sergio</span><small>&amp;</small><span class="script">Patricia</span><em>12 · 12 · 2026</em></div>
+      <div class="env-front"></div>
+      <div class="env-flap"></div>
+      <button class="seal" id="seal" aria-label="Abrir la invitación"><span>S<i>&amp;</i>P</span></button>
+    </div>
+    <p class="welcome-date">SÁBADO · 12 DE DICIEMBRE · 2026</p>
+    <button class="button" id="open">Abrir invitación</button>
+    <p class="sound-note">Toca el sello o el botón · con música se siente aún más bonito</p>
+  </div>
+</section>
+
+<main id="invitation" hidden>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img class="corner tl" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true">
+    <img class="corner tr" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true">
+    <p class="kicker">¡NOS CASAMOS!</p>
+    <h1 tabindex="-1"><span class="name">Sergio</span><span class="amp">&amp;</span><span class="name">Patricia</span></h1>
+    <p class="hero-line">y queremos que seas parte de nuestra historia</p>
+    <div class="photo-wrap"><img class="frame-top" src="flores-guirnalda.webp" width="1198" height="279" alt="" aria-hidden="true" loading="lazy"><figure class="frame landscape"><img src="foto-1.webp" width="1332" height="1000" alt="Sergio y Patricia sentados juntos, sonriéndose" fetchpriority="high"></figure><img class="frame-ramo bl" src="flores-ramo.webp" width="703" height="539" alt="" aria-hidden="true"></div>
+    <div class="date-line"><span>SÁBADO</span><b>12</b><span>DICIEMBRE<br>2026</span></div>
+    <a href="#bendicion" class="scroll-hint">Desliza para descubrir<span aria-hidden="true">↓</span></a>
+  </header>
+
+  <!-- BENDICIÓN Y PADRES -->
+  <section class="section blessing reveal" id="bendicion">
+    <img class="garland" src="flores-guirnalda.webp" width="1198" height="279" alt="" aria-hidden="true" loading="lazy">
+    <blockquote>“Las muchas aguas no podrán apagar el amor, ni lo ahogarán los ríos.”<cite>Cantares 8:7</cite></blockquote>
+    <p class="lead">Hay amores que se encuentran sin buscarse y deciden quedarse para siempre. Con la bendición de Dios y de nuestros padres, hemos decidido unir nuestras vidas en matrimonio, y nada nos haría más felices que compartir ese momento contigo.</p>
+    <h2 class="small-title">Con la bendición de nuestros padres</h2>
+    <div class="parents">
+      <div><p class="role">Padres del novio</p><p>Jose Monroy Lopez<br>Sonia Lopez Auza</p></div>
+      <div><p class="role">Padres de la novia</p><p>Andres Mejia Almanza<br>Sonia E. Mercado Saavedra</p></div>
+    </div>
+  </section>
+
+  <!-- FECHA -->
+  <section class="section date-section reveal" id="fecha">
+    <img class="corner tl small" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true" loading="lazy"><img class="corner br small" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true" loading="lazy">
+    <p class="kicker">RESERVA ESTE DÍA</p>
+    <h2>Tenemos una <em>cita</em></h2>
+    <div class="calendar" aria-label="Calendario de diciembre de 2026">
+      <p class="month">Diciembre 2026</p>
+      <div class="week"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+      <div class="days" id="calendar"></div>
+    </div>
+    <div class="countdown" id="countdown" role="timer" aria-label="Cuenta regresiva para la boda">
+      <div><b id="days">00</b><span>días</span></div>
+      <div><b id="hours">00</b><span>horas</span></div>
+      <div><b id="minutes">00</b><span>min</span></div>
+      <div><b id="seconds">00</b><span>seg</span></div>
+    </div>
+    <p class="today" id="today" hidden>¡Hoy es el gran día!</p>
+    <a class="button light" href="boda.ics" download="Boda-Sergio-y-Patricia.ics">Guardar en mi calendario</a>
+  </section>
+
+  <!-- LUGARES -->
+  <section class="section places reveal" id="lugares">
+    <img class="garland" src="flores-guirnalda.webp" width="1198" height="279" alt="" aria-hidden="true" loading="lazy">
+    <p class="kicker">DÓNDE NOS VEMOS</p>
+    <h2>Ceremonia &amp; <em>recepción</em></h2>
+    <article class="place">
+      <div class="place-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 4v8M20 8h8M14 44V24l10-10 10 10v20M8 44h32M20 44v-9a4 4 0 0 1 8 0v9M24 20.5v.5"/></svg></div>
+      <p class="role">Ceremonia religiosa</p>
+      <h3>Parroquia San Ildefonso</h3>
+      <p class="where">Quillacollo · Cochabamba</p>
+      <p class="time">14:30</p>
+      <a class="button" href="https://maps.app.goo.gl/CeEXFCbojJGW33tT9" target="_blank" rel="noopener">Cómo llegar</a>
+    </article>
+    <img class="garland mini" src="flores-guirnalda.webp" width="1198" height="279" alt="" aria-hidden="true" loading="lazy">
+    <article class="place">
+      <div class="place-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M17 6h14l-2 14a5 5 0 0 1-10 0zM24 25v15M17 42h14M30 6l-3 6"/><circle cx="35" cy="12" r="1.2"/><circle cx="12" cy="15" r="1"/></svg></div>
+      <p class="role">Recepción social</p>
+      <h3>Salón de Eventos Fortaleza</h3>
+      <p class="where">Quillacollo · Cochabamba</p>
+      <p class="time small">Te esperamos después de la ceremonia</p>
+      <a class="button" href="https://maps.app.goo.gl/aDAmqTkf52FpMYfYA" target="_blank" rel="noopener">Cómo llegar</a>
+    </article>
+  </section>
+
+  <!-- FOTO DEL MEDIO -->
+  <section class="section middle-photo reveal" id="nosotros">
+    <p class="kicker">NUESTRA HISTORIA</p>
+    <h2>Un amor que se <em>comparte</em></h2>
+    <div class="photo-wrap"><img class="frame-top" src="flores-guirnalda.webp" width="1198" height="279" alt="" aria-hidden="true" loading="lazy"><figure class="frame landscape"><img src="foto-2.webp" width="1600" height="1054" alt="Sergio y Patricia besando a un perrito con corbatín" loading="lazy"></figure><img class="frame-ramo bl" src="flores-ramo.webp" width="703" height="539" alt="" aria-hidden="true" loading="lazy"></div>
+    <p class="script-note">Contigo, cualquier lugar es hogar</p>
+  </section>
+
+  <!-- CRONOGRAMA -->
+  <section class="section schedule reveal" id="cronograma">
+    <img class="corner br small faint" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true" loading="lazy">
+    <p class="kicker">ASÍ VIVIREMOS ESTE DÍA</p>
+    <h2>Cronograma</h2>
+    <ol class="timeline">
+      <li><time>14:30</time><span class="t-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 6v8M20 10h8M14 42V24l10-10 10 10v18M10 42h28M21 42v-7a3 3 0 0 1 6 0v7"/></svg></span><p>Ceremonia religiosa</p></li>
+      <li><time>16:30</time><span class="t-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="19" cy="28" r="10"/><circle cx="29" cy="28" r="10"/><path d="M19 18l-3-5h6zM29 18l-3-5h6z"/></svg></span><p>Acto protocolar</p></li>
+      <li><time>18:30</time><span class="t-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="26" r="11"/><circle cx="24" cy="26" r="6"/><path d="M8 12v8a3 3 0 0 0 3 3v15M11 12v8M14 12v8a3 3 0 0 1-3 3M40 12c-3 2-4 6-4 11h4v15"/></svg></span><p>Cena</p></li>
+      <li><time>22:00</time><span class="t-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 42h28M12 42V32h24v10M16 32v-8h16v8M20 24v-7h8v7M24 17v-5"/><path d="M24 12c-2-2-2-4 0-6 2 2 2 4 0 6z"/></svg></span><p>Torta</p></li>
+      <li><time>00:00</time><span class="t-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="18" cy="14" r="5"/><circle cx="30" cy="14" r="5"/><circle cx="24" cy="21" r="5"/><path d="M20 26l4 16 4-16M16 30l16-3"/></svg></span><p>Bouquet y liga</p></li>
+      <li><time>01:30</time><span class="t-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M30 8a14 14 0 1 0 10 22A12 12 0 0 1 30 8z"/><path d="M12 10l1 2 2 1-2 1-1 2-1-2-2-1 2-1zM38 8l.7 1.3L40 10l-1.3.7L38 12l-.7-1.3L36 10l1.3-.7z"/></svg></span><p>Despedida</p></li>
+    </ol>
+  </section>
+
+  <!-- PADRINOS -->
+  <section class="section godparents reveal" id="padrinos">
+    <img class="corner bl small faint" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true" loading="lazy">
+    <img class="garland" src="flores-guirnalda.webp" width="1198" height="279" alt="" aria-hidden="true" loading="lazy">
+    <p class="kicker">NOS ACOMPAÑAN CON CARIÑO</p>
+    <h2>Nuestros <em>padrinos</em></h2>
+    <div class="gp-grid">
+      <div class="gp pair"><p class="role">Padrinos de Religión</p><p>Royer Wilson Sejas Rocha<br>Jhovana Mejia Almanza</p></div>
+      <div class="gp pair"><p class="role">Padrinos de Civil</p><p>Rolando W. Montecinos Fuentes<br>Karina Sejas Rocha</p></div>
+      <div class="gp pair"><p class="role">Padrinos de Aros</p><p>Patricia A. Monroy Lopez<br>David Vásquez Garcia</p></div>
+      <div class="gp pair"><p class="role">Padrinos de Torta</p><p>Mauro Almanza Vera<br>Susan F. Gonzales</p></div>
+      <div class="gp"><p class="role">Madrina de Foto y Video</p><p>P. Marcela Monroy Lopez</p></div>
+      <div class="gp"><p class="role">Madrina de Recuerdos</p><p>Claudia C. Monroy Lopez</p></div>
+      <div class="gp"><p class="role">Madrina de Altar</p><p>Aleyda Maldonado Coca</p></div>
+      <div class="gp"><p class="role">Madrina de Velo y Bouquet</p><p>Angelica Fernandez Vidal</p></div>
+    </div>
+  </section>
+
+  <!-- VESTIMENTA -->
+  <section class="section dress reveal" id="vestimenta">
+    <img class="corner tr small" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true" loading="lazy"><img class="corner bl small" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true" loading="lazy">
+    <p class="kicker">CÓDIGO DE VESTIMENTA</p>
+    <h2>Traje <em>formal</em></h2>
+    <div class="dress-grid">
+      <div><svg viewBox="0 0 64 96" aria-hidden="true"><path d="M26 6c0 5 2 9 6 9s6-4 6-9M24 6l2 0M38 6h2M26 15l-4 16 6 4-14 55h36L36 35l6-4-4-16"/><path d="M24 31h16"/></svg><p class="role">Damas</p><p>Vestido largo de gala</p></div>
+      <div><svg viewBox="0 0 64 96" aria-hidden="true"><path d="M20 8l12 12 12-12M20 8L10 16v70h18V48M44 8l10 8v70H36V48M28 48h8M32 20l-4 6 4 30 4-30z"/><path d="M28 20h8"/></svg><p class="role">Varones</p><p>Traje formal y corbata</p></div>
+    </div>
+    <p class="notice">El color blanco y los tonos claros están reservados exclusivamente para los novios.</p>
+  </section>
+
+  <!-- SIN NIÑOS -->
+  <section class="section adults reveal" id="adultos">
+    <img class="corner tl small faint" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true" loading="lazy">
+    <div class="badge" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 40S8 30 8 19a8 8 0 0 1 16-3 8 8 0 0 1 16 3c0 11-16 21-16 21z"/></svg></div>
+    <h2>Celebración solo para <em>adultos</em></h2>
+    <p>Aunque apreciamos mucho a sus pequeños, hemos decidido celebrar nuestra boda sin niños.</p>
+    <p class="script-note">Gracias por comprender</p>
+  </section>
+
+  <!-- REGALOS -->
+  <section class="section gifts reveal" id="regalos">
+    <img class="corner br small faint" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true" loading="lazy">
+    <button class="gift-envelope" id="gift" aria-expanded="false" aria-controls="gift-text">
+      <span class="ge-back"></span><span class="ge-card">Gracias</span><span class="ge-front"></span><span class="ge-flap"></span>
+      <span class="sr-only">Abrir sobre</span>
+    </button>
+    <p class="kicker">SUGERENCIA DE REGALO</p>
+    <h2>Lluvia de <em>sobres</em></h2>
+    <div id="gift-text">
+      <p>El mejor regalo es tu presencia. Pero si deseas hacernos un detalle, puedes ayudarnos a alimentar nuestra alcancía para nuestra luna de miel y nuestro nidito de amor.</p>
+      <p class="script-note">¡Gracias!</p>
+    </div>
+  </section>
+
+  <!-- CONFIRMACIÓN -->
+  <section class="section rsvp reveal" id="confirmar">
+    <img class="garland" src="flores-guirnalda.webp" width="1198" height="279" alt="" aria-hidden="true" loading="lazy">
+    <p class="kicker">TU PRESENCIA ES NUESTRO MEJOR REGALO</p>
+    <h2>¿Nos <em>acompañas</em>?</h2>
+    <p>Por favor, confírmanos tu asistencia por WhatsApp. Así podremos preparar todo con mucho cariño para ti.</p>
+    <a class="button whatsapp" id="rsvp" href="https://wa.me/59165777426" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+      Confirmar asistencia
+    </a>
+    <p class="phone">+591 65777426</p>
+  </section>
+
+  <!-- CIERRE -->
+  <footer class="closing reveal">
+    <img class="corner bl" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true" loading="lazy"><img class="corner br" src="flores-esquina.webp" width="701" height="648" alt="" aria-hidden="true" loading="lazy">
+    <div class="photo-wrap"><img class="frame-top" src="flores-guirnalda.webp" width="1198" height="279" alt="" aria-hidden="true" loading="lazy"><figure class="frame portrait"><img src="foto-3.webp" width="1000" height="1332" alt="Sergio y Patricia bailando" loading="lazy"></figure><img class="frame-ramo bl" src="flores-ramo.webp" width="703" height="539" alt="" aria-hidden="true" loading="lazy"></div>
+    <p class="script-big">Te esperamos</p>
+    <p class="closing-names">Sergio &amp; Patricia</p>
+    <p class="closing-date">12 · 12 · 2026</p>
+    <a class="credit" href="https://digitalpro-invitaciones.github.io/DIGITAL-PRO/" target="_blank" rel="noopener">Invitación digital por <b>Digital Pro</b></a>
+  </footer>
+</main>
+
+<!-- CONTROLES -->
+<div class="controls" id="controls" hidden>
+  <button id="music-toggle" class="ctrl" aria-pressed="false" aria-label="Reproducir música">
+    <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+    <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+    <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+  <button id="anim-toggle" class="ctrl" aria-pressed="true" aria-label="Pausar animaciones">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 11 5 20 4c-1 9-6 15-15 15z"/><path d="M5 19l8-8"/></svg>
+    <span class="slash" aria-hidden="true"></span>
+  </button>
+</div>
+
+
+</body>
+</html>
